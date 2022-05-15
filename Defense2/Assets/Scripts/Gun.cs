@@ -150,4 +150,9 @@ public class Gun : MonoBehaviour
 
         gunState = GunState.Ready;
     }
+
+    public void AddAmmo(int pAmmo)
+    {
+        ammoRemain += pAmmo;
+    }
 }

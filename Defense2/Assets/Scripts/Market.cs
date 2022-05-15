@@ -10,6 +10,7 @@ public class Market : MonoBehaviour
     Text text0;
     Color notAllowed = new Color(255f, 0f, 0f, 255f);
     Color allowed = new Color(0f, 0f, 0f, 255f);
+    public GameObject gun;
 
     // Start is called before the first frame update
     void Start()
@@ -45,10 +46,12 @@ public class Market : MonoBehaviour
     public void Dummy1()
     {
         GameManager.instance.BuyProduct(100);
+        gun.GetComponent<Gun>().AddAmmo(10);
     }
 
     public void Dummy2()
     {
         GameManager.instance.BuyProduct(200);
+        PlayerHealth.instance.RestoreHealth(10f);
     }
 }

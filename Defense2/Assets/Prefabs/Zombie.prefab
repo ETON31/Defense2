@@ -488,6 +488,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startingHealth: 100
+  health: 0
   dead: 0
   attackDistance: 1
   moveSpeed: 5
